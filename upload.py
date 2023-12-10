@@ -4,9 +4,7 @@ import numpy as np
 import json
 from supabase import create_client, Client
 import time
-from dotenv import load_dotenv
 import os
-load_dotenv()
 SUPABASE_KEY = os.environ.get("SUPABASE_KEY")
 SUPABASE_URL = os.environ.get("SUPABASE_URL")
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
